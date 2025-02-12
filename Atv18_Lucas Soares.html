@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 18</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Atividade 18</h1>
+    <p>Bom é muito díficil aprender Javascript</p>
+    <button onclick="fontFamily()">Troque a fonte</button>
+    <script>
+        let fontes = 0;
+        const fonts = ['Arial', 'Baskerville', 'Calibri', 'Cambria', 'Candara', 'Consolas']
+        function fontFamily() {
+            document.body.style.fontFamily = fonts[fontes % fonts.length];
+            fontes++;
+        }
+    </script>
+</body>
+</html>

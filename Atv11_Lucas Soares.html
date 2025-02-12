@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+
+<style>
+    body {
+        text-align: center;
+    }
+    h1{
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+    }
+    button:hover{
+        color: white;
+        background-color: black;
+    }
+</style>
+
+<body>
+    <h1>Atividade 11</h1>
+    <p>Javascript é uma materia muito tranquila?</p>
+    <button onmouseover="botao(this)">Concordo</button>
+    <button onclick="ultimo()">Discordo</button>
+
+    <script>
+        function botao(x) {
+            let marginX = Math.floor(Math.random() * window.innerWidth * 0.8);
+            let marginY = Math.floor(Math.random() * window.innerHeight * 0.8);
+
+            x.style.position = "absolute";
+            x.style.left = marginX + "px";
+            x.style.top = marginY + "px";
+        }
+        function ultimo(){
+            alert("Você me entende")
+            location.reload();
+        }
+    </script>
+</body>
+
+</html>

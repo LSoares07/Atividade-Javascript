@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+</head>
+
+<style>
+    body{
+        text-align: center;
+    }
+    .quadrado{
+        width: 500px;
+        height: 500px;
+        background-color: blue;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <h1>Atividade 13</h1>
+    <div class="quadrado" id="quadrado"></div><br>
+    <button onclick="diminuirTamanho()">Diminuir Tamanho</button>
+
+    <script>
+        function diminuirTamanho() {
+            var quadrado = document.getElementById('quadrado');
+            var currentWidth = quadrado.offsetWidth;
+            var currentHeight = quadrado.offsetHeight;
+            if (currentWidth > 10 && currentHeight > 10) {
+                quadrado.style.width = (currentWidth - 10) + 'px';
+                quadrado.style.height = (currentHeight - 10) + 'px';
+            }
+            if (currentWidth <= 10 && currentHeight <= 10) {
+                quadrado.style.display = 'none';
+                location.reload();
+            }
+        }
+    </script>
+</body>
+</html>

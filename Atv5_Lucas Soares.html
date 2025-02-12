@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+
+<body>
+    <h1>
+        Atividade 5
+    </h1>
+    <script>
+        alert("É HORA DA HISTÓRIA")
+        let nome = prompt("Informe o seu nome o seu nome: ")
+        alert(nome + " estava andando pelo labirinto, ajude-o a chegar o fim")
+        alert(nome + " chegou em uma bifurcação")
+        let escolha = prompt(nome + " deve ir para a direita ou esquerda")
+        if (escolha == "direita") {
+            alert(nome+ " escapou da armadilha");
+
+        }
+        else if (escolha == "esquerda") {
+            alert(nome+" caiu na armadilha e morreu");
+        }
+        else {
+            if (confirm("Não é uma resposta aceitavel")) {
+                location.reload();
+            }
+        }
+        alert ("Obriga por ajudar na historia")
+
+    </script>
+</body>
+
+</html>

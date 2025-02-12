@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+    h1{
+        color:brown;
+    }
+</style>
+
+<body>
+    <h1>Atividade 14</h1>
+    <button onclick="backgroundColor()">Troque a cor</button>
+    <script>
+        let cor = 0;
+        const colors = ['red', 'green', 'yellow', 'blue', 'black', 'gray']
+        function backgroundColor() {
+            document.body.style.backgroundColor = colors[cor % colors.length];
+            cor++;
+        }
+    </script>
+</body>
+
+</html>
