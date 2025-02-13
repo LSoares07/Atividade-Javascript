@@ -10,7 +10,7 @@
     body{
         text-align: center;
     }
-    .quadrado{
+    #quadrado{
         width: 500px;
         height: 500px;
         background-color: blue;
@@ -20,14 +20,14 @@
 
 <body>
     <h1>Atividade 13</h1>
-    <div class="quadrado" id="quadrado"></div><br>
+    <div id="quadrado"></div><br>
     <button onclick="diminuirTamanho()">Diminuir Tamanho</button>
 
     <script>
         function diminuirTamanho() {
-            var quadrado = document.getElementById('quadrado');
-            var currentWidth = quadrado.offsetWidth;
-            var currentHeight = quadrado.offsetHeight;
+            let quadrado = document.getElementById('quadrado');
+            let currentWidth = quadrado.offsetWidth;
+            let currentHeight = quadrado.offsetHeight;
             if (currentWidth > 10 && currentHeight > 10) {
                 quadrado.style.width = (currentWidth - 10) + 'px';
                 quadrado.style.height = (currentHeight - 10) + 'px';

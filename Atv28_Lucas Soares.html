@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade28</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+</style>
+
+<body>
+    <h1>Atividade 28</h1>
+    <script>
+        function jogar() {
+            const opcoes = ["pedra", "papel", "tesoura"];
+            const escolhaUsuario = prompt("Escolha pedra, papel ou tesoura:");
+            const escolhaComputador = opcoes[Math.floor(Math.random() * 3)];
+
+            alert("Computador escolheu: " + escolhaComputador);
+
+            if (escolhaUsuario == escolhaComputador) {
+                alert("Empate!");
+            } else if (
+                (escolhaUsuario === "pedra" && escolhaComputador === "tesoura") ||
+                (escolhaUsuario === "papel" && escolhaComputador === "pedra") ||
+                (escolhaUsuario === "tesoura" && escolhaComputador === "papel")
+            ) {
+                alert("Você ganhou!");
+            } else {
+                alert("Você perdeu!");
+            }
+        }
+
+        jogar();
+    </script>
+</body>
+
+</html>
